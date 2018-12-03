@@ -16,5 +16,3 @@ app.get("/about", function(req, res){
 app.listen(3000, function(){
   console.log("App server has started...");
 });
-
-// app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
