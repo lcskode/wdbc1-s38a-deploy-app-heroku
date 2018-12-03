@@ -1,5 +1,6 @@
 var express = require("express");
 var app = express();
+const PORT = process.env.PORT || 5000;
 
 app.set("view engine", "ejs");
 
@@ -13,6 +14,8 @@ app.get("/about", function(req, res){
 });
 
 
-app.listen(3000, function(){
-  console.log("App server has started...");
-});
+// app.listen(3000, function(){
+//   console.log("App server has started...");
+// });
+
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
